@@ -1,0 +1,210 @@
+/*
+Probably, CSS for modules (user display, shop display, etc) should be in here
+as they might appear on any website.
+*/
+
+body{
+	background:#E2EAEE;
+	font-family: 'Georgia';
+}
+
+.main{
+	width:750px;
+	padding:10px;
+	margin-left:auto;
+	margin-right:auto;
+	background:white;
+}
+
+div.main>div.title{
+	height:100px;
+	font-size:1.5em;
+	position:relative;
+}
+
+div.main>div.title>.login_shortcut{
+	position:absolute;
+	top:0;
+	right:0;
+	z-index:1;
+	font-size:.5em;
+}
+
+.top_banner{
+	width:750px;
+	height:270px;
+	background:#ddd;
+}
+
+.page_content{
+}
+
+.footer{
+	clear:both;
+	text-align:center;
+	margin-top:20px;
+	color:#8A9C9F;
+	font: .5em 'TrajanPro-Regular';
+}
+.footer a{
+	color:#8A9C9F;
+}
+
+.dropshadow{
+	/* Standard CSS3 */
+	box-shadow: 3px 3px 4px #CCC;
+	/* Firefox only */
+	-moz-box-shadow: 0px 0px 20px #CCC;
+	/* Saphari/Chrome */
+	-webkit-box-shadow: 0px 0px 20px #CCC;
+	/* For IE */
+	/*filter: progid:DXImageTransform.Microsoft.Glow(Strength=10, Color='#CCCCCC');*/
+	/*filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=135, Strength=3);*/
+}
+/*This div is used to prevent floating elements from overflowing out of their
+container. Just add an empty div at the bottom of the container, it will remain
+invisible and push the container borders over the floating elements.*/
+div.border_cleaner{
+	clear:both;
+	visibility: hidden;
+	height:0px;
+	line-height:0px;
+	font-size:0px;
+}
+
+/* HOVER/SELECTED IMAGES
+Used throughout the website
+Usage: Add the required images in a single container. Images get an attribute
+"mode" with a value of "normal", "selected" or "hover" depending on its use.
+The container gets the classes "hoverable" and "selectable" depending on the
+required uses.
+img[mode='normal']
+img[mode='selected']
+img[mode='hover']
+*/
+.selectable img[mode='selected']{display: none;}
+.selectable.selected img[mode='selected']{
+	display:inline;
+}
+.selectable.selected img[mode='normal']{
+	display:none;
+}
+
+.hoverable img[mode='hover']{display: none;}
+/*
+Temporarily removed as it confuses iPad and iPhone browsers...
+.hoverable:hover img[mode='normal']{
+	display:none;
+}
+.hoverable:hover img[mode='hover']{
+	display:inline;
+}
+*/
+
+/*
+Styles for the registration and login full page forms
+*/
+/*.page_content>div{*/
+div.register, div.login, div.user_info_form {
+	width:60%;
+	margin-left:20%;
+	min-height:150px;
+	float:left;
+}
+
+.page_content>div>div.title {
+	width:100%;
+	background:#8A9C9F;
+	color:white;
+	text-align:center;
+	font:1em "TrajanPro-Regular";
+}
+div.register .registration_form>form, div.login .login_form>form, div.user_info_form form {
+	padding: 5%;
+	text-align: center;
+}
+div.register .registration_form div.input {
+	margin-bottom: 10px;
+}
+div.register .registration_form label, div.user_info_form div.input label {
+	display: inline-block;
+	width: 40%;
+	padding-right: 5%;
+	text-align: left;
+	vertical-align: top;
+}
+div.register .registration_form input, div.user_info_form input, div.user_info_form textarea {
+	width: 49%;
+}
+
+div.user_info_form div.input {
+	margin-bottom: 5px;
+}
+div.user_info_form .title {
+	text-align: left;
+	font-weight: bold;
+}
+div.user_info_form fieldset {
+	padding: 5px;
+	margin: 5px;
+	border: 0;
+	text-align: right;
+}
+div.user_info_form fieldset input {
+	margin-left: 50px;
+}
+
+
+/*
+Styles for the user view
+*/
+/*Columns*/
+div.user_view {
+	margin: 10px;
+	border: 1px solid black;
+	background-color: #eee;
+}
+div.user_view>.unfo_col{
+	float:left;
+	width:57%;
+	padding-left:2%;
+	text-align:center;
+}
+div.user_view>.mmc_data{
+	float:left;
+	width:37%;
+	padding-left:2%;
+	text-align:center;
+}
+div.user_view>.unfo_col>.unfo_col.user_identity{
+	float:left;
+	width:37%;
+	padding-left:2%;
+}
+div.user_view>.unfo_col>.unfo_col.user_data{
+	float:left;
+	width:57%;
+	padding-left:2%;
+}
+div.user_view .unfo_col ul{
+	list-style:none;
+	padding:0px;
+}
+.user_view .user_identity span.login{
+	position: relative;
+	top:10px;
+}
+
+/*Text style*/
+div.user_view span.login{
+	font-size:1.2em;
+}
+div.user_view .unfo_col{
+	text-align:center;
+}
+div.user_view  div.unfo_col .user_data{
+	text-align:left;
+}
+div.user_view .unfo_col.user_data .stats{
+	font-size:.7em;
+}

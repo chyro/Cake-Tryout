@@ -1,0 +1,38 @@
+/*
+Styles for the login form
+*/
+.login_form form > div.input {
+	text-align:left;
+	padding-bottom:5px;
+	clear:both;
+}
+.login_form form>input, .login_form form div.submit input{/* submit image */
+	float:left;
+}
+.login_form form>p{/* register link */
+	float:right;
+	clear:right;
+	font-size:1em;
+	margin-top:0px;
+}
+.login_form img{/* logout link */
+	border:0;
+}
+
+/* Organization of the fields within the blocks */
+.login_form form>div>.field{
+	margin:0px;
+	display: block;
+	clear:both;
+	margin-bottom:10px;
+}
+.login_form form>div>.field>span+*{
+	width:150px;
+	float:right;
+	margin-left:10px;
+}
+
+/* Design of the fields */
+.login_form form .field input{
+	border-width:1px;
+}

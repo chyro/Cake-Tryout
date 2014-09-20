@@ -1,0 +1,55 @@
+/*
+Styles for the front page
+*/
+
+/*.page_content>div{*/
+	/* .partner, .prize, .upcoming */
+div#news_column {
+	width:36%;
+	float:left;
+}
+div#site_overview {
+	font-size:.8em;
+	width:60%;
+	float:left;
+	margin-left:3%;
+}
+div#site_overview ul{
+	padding-left:10px;
+}
+
+#site_register img{
+	border:0;
+}
+
+.silverbox{
+	margin-top:10px;
+}
+.silverbox>div.title{
+	width:100%;
+	background:#8A9C9F;
+	color:white;
+	text-align:center;
+	font:.8em "TrajanPro-Regular";
+	padding:3px 0px;
+}
+.silverbox>div.content{
+	padding-top:10px;
+	font:.7em Georgia;
+}
+.silverbox a{
+	font-family: "TrajanPro-Regular";
+	color:#8A9C9F;
+}
+
+.sponsor_box{
+	padding-bottom:10px;
+}
+.sponsor_box>table>tbody>tr>td:first-child{
+	width:40%;
+	text-align:center;
+	vertical-align:middle;
+}
+.sponsor_box .logo{
+	max-width: 80px;
+}
